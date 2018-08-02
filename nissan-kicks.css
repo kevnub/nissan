@@ -335,7 +335,7 @@ html {
   box-sizing: inherit;
 }
 
-.container {
+.boot-container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -344,30 +344,30 @@ html {
 }
 
 @media (min-width: 576px) {
-  .container {
+  .boot-container {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .boot-container {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .boot-container {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .boot-container {
     max-width: 1140px;
   }
 }
 
-.container-fluid {
+.boot-container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
