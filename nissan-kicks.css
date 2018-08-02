@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family:  Montserrat, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: #424242;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+h2,h3,p{
+    margin-left: 10px;
+    margin-right:: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #424242;
+}
+
+h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #424242;
+}
+
+p.header-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    color: #f44336;
+}
+
+p.header-stat{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 0px;
+    font-weight: 700;
+    color: #424242;
+}
+
+p.main-subtext{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #212121;
+}
+
+p.subtext{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.niss-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.niss-bg {
+    background-image: url("backgrounds/accord-banner.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.niss-navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+.niss-navbar a {
+    color: #b71c1c;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.niss-navbar a:hover {
+    color: #212121;
+}
+
+.niss-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+hr.slight {
+    height: 8px;
+    width: 15%;
+    background-color: #b71c1c;
+    margin-bottom: -10px;
+    border: none;
+    margin-left: 10px;
+}
+
+hr.dotted{
+    height: 1px;
+    width: 100%;
+    border-top: 1px dashed #616161;
+    color: white;
+    background-color: white;
+    height:1px;
+}
+
+hr.niss{
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    border: none;
+    margin: 0px;
+}
+
+
+.niss-button {
+    text-align: center;
+    font-weight: bold;
+}
+.niss-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: #c62828;
+    border: 2px solid #c62828;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+.niss-button a:hover{
+    background-color: white;
+    color: #c62828;
+}
+
+.niss-hidden {
+  display: none;
+}
+
+/* CONTAINER */
+.niss-container {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/*small*/
+@media (min-width: 768px) {
+  .niss-container {
+    width: 750px;
+  }
+  h1{font-size: 37px;}
+  h2 {font-size: 27px;}
+  .niss-button a {
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  .niss-center {
+      width: 50%;
+  }
+  h2,h3,p{
+      margin-left: 0px;
+      margin-right:: 0px;
+  }
+  h2 {
+      font-size: 25px;
+  }
+  h3{
+      font-size: 18px;
+  }
+  p.main-subtext{
+      font-size: 16px;
+  }
+  p.subtext{
+      font-size: 14px;
+  }
+  p.header-desc{
+      font-size: 15px;
+  }
+  p.header-stat{
+      font-size: 25px;
+  }
+  hr.slight {
+      margin-left: 0px;
+  }
+}
+
+/*medium*/
+@media (min-width: 992px) {
+  .niss-container {
+    width: 970px;
+  }
+}
+
+/*large*/
+@media (min-width: 1200px) {
+  .niss-container {
+    width: 1170px;
+  }
+}
+
+
+/* ROW */
+.niss-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.niss-navbar-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0px;
+}
+/* GRID */
+.niss-flex {
+    display: flex;
+    flex-flow: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.niss-vertical-divider {
+    display: flex;
+    flex-flow: column;
+    border-right: 2px solid #E7E7E7;
+}
+/* COLUMNS */
+.niss-col-xs-12 {grid-column: span 12}
+.niss-col-xs-11 {grid-column: span 11;}
+.niss-col-xs-10 {grid-column: span 10}
+.niss-col-xs-9 {grid-column: span 9}
+.niss-col-xs-8 {grid-column: span 8}
+.niss-col-xs-7 {grid-column: span 7}
+.niss-col-xs-6 {grid-column: span 6}
+.niss-col-xs-5 {grid-column: span 5}
+.niss-col-xs-4 {grid-column: span 4}
+.niss-col-xs-3 {grid-column: span 3}
+.niss-col-xs-2 {grid-column: span 2}
+.niss-col-xs-1 {grid-column: span 1}
+.offset {display: none;}
+@media (min-width: 768px) {
+.niss-col-sm-12 {grid-column: span 12}
+.niss-col-sm-11 {grid-column: span 11;}
+.niss-col-sm-10 {grid-column: span 10}
+.niss-col-sm-9 {grid-column: span 9}
+.niss-col-sm-8 {grid-column: span 8}
+.niss-col-sm-7 {grid-column: span 7}
+.niss-col-sm-6 {grid-column: span 6}
+.niss-col-sm-5 {grid-column: span 5}
+.niss-col-sm-4 {grid-column: span 4}
+.niss-col-sm-3 {grid-column: span 3}
+.niss-col-sm-2 {grid-column: span 2}
+.niss-col-sm-1 {grid-column: span 1}
+}
+@media (min-width: 992px) {
+.niss-col-md-12 {grid-column: span 12}
+.niss-col-md-11 {grid-column: span 11;}
+.niss-col-md-10 {grid-column: span 10}
+.niss-col-md-9 {grid-column: span 9}
+.niss-col-md-8 {grid-column: span 8}
+.niss-col-md-7 {grid-column: span 7}
+.niss-col-md-6 {grid-column: span 6}
+.niss-col-md-5 {grid-column: span 5}
+.niss-col-md-4 {grid-column: span 4}
+.niss-col-md-3 {grid-column: span 3}
+.niss-col-md-2 {grid-column: span 2}
+.niss-col-md-1 {grid-column: span 1}
+.niss-offset {display: inline;}
+}
+@media (min-width: 1200px) {
+.niss-col-lg-12 {grid-column: span 12}
+.niss-col-lg-11 {grid-column: span 11;}
+.niss-col-lg-10 {grid-column: span 10}
+.niss-col-lg-9 {grid-column: span 9}
+.niss-col-lg-8 {grid-column: span 8}
+.niss-col-lg-7 {grid-column: span 7}
+.niss-col-lg-6 {grid-column: span 6}
+.niss-col-lg-5 {grid-column: span 5}
+.niss-col-lg-4 {grid-column: span 4}
+.niss-col-lg-3 {grid-column: span 3}
+.niss-col-lg-2 {grid-column: span 2}
+.niss-col-lg-1 {grid-column: span 1}
+}
